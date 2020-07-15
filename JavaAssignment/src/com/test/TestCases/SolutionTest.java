@@ -50,7 +50,7 @@ private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
    	testForFirst();
    	testForSecond();
    	testForThree();
-   	
+   	testForFour();
    }
    
    public void testForFirst()
