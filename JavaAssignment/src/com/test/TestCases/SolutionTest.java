@@ -8,6 +8,7 @@ import java.io.PrintStream;
 import com.test.Test1.Bird;
 import com.test.Test2.Chicken;
 import com.test.Test2.Duck;
+import com.test.Test3.Rooster;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -45,7 +46,7 @@ private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
    {
    	testForFirst();
    	testForSecond();
-  
+   	testForThree();
    	
    }
    
@@ -65,7 +66,7 @@ private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
    
    public void testForSecond()
    {
- //Question1 testing
+ //question 2 testing
 	assertTrue( true );
 	Duck duck = new Duck();
 	duck.makeSound();
@@ -77,6 +78,16 @@ private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
            	"Cluck,cluck",outContent.toString().trim().replace(" ", ""));
 	outContent.reset();
    }
-   
+   public void testForThree()
+   {
+ //Question3 testing
+	assertTrue( true );
+   Rooster rooster = new Rooster();
+   rooster.makeSound();
+	assertEquals("Cock-a-doodle-doo"
+           	
+           	,outContent.toString().trim().replace(" ", ""));
+	outContent.reset();
+   }
 
 }

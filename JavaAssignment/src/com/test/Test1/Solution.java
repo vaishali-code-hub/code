@@ -2,6 +2,7 @@ package com.test.Test1;
 
 import com.test.Test2.Chicken;
 import com.test.Test2.Duck;
+import com.test.Test3.Rooster;
 
 public class Solution {
 
@@ -22,7 +23,14 @@ public class Solution {
         duck.swim();
         duck.makeSound();
         chicken.makeSound();
-
+        
+        //3 for Rooster used interface
+       
+        System.out.println("Question3 output:");
+       Rooster rooster = new Rooster();
+       rooster.makeSound();
+        
+        
 	}
 
 }
