@@ -4,4 +4,6 @@ public abstract class Animal implements Walkable{
 	
 	public abstract void walk();
 
+
+
 }

@@ -9,6 +9,9 @@ import com.test.Test1.Bird;
 import com.test.Test2.Chicken;
 import com.test.Test2.Duck;
 import com.test.Test3.Rooster;
+import com.test.Test4.Cat;
+import com.test.Test4.Dog;
+import com.test.Test4.Parrot;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -87,6 +90,26 @@ private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 	assertEquals("Cock-a-doodle-doo"
            	
            	,outContent.toString().trim().replace(" ", ""));
+	outContent.reset();
+   }
+   
+   
+   public void testForFour()
+   {
+ //question 4 testing
+	assertTrue( true );
+	Parrot parrot1 = new Parrot(new Dog());
+    parrot1.getDog().makeSound();
+    Parrot parrot2 = new Parrot(new Cat());
+    parrot2.getCat().makeSound();
+    Parrot parrot3 = new Parrot(new Rooster());
+    parrot3.getRooster().makeSound();
+    Parrot parrot4 = new Parrot(new Duck());
+    parrot4.getDuck().makeSound();
+	assertEquals("Woof,woof\n" +
+           	"Meow\n" +
+           	"Cock-a-doodle-doo\n" + 
+           	"Quack,quack",outContent.toString().trim().replace(" ", ""));
 	outContent.reset();
    }
 
